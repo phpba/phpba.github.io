@@ -71,7 +71,7 @@ social:
   - name: Twitter
     icon: twitter
     username: phpba
-    url: hhttps://twitter.com/phpba
+    url: https://twitter.com/phpba
     desc: Follow me on Twitter
     share: true
 
