@@ -2,11 +2,11 @@
 
   <div class="wrapper">
 
-    <h3 class="footer-heading">{{ site.title }}</h3>
+    <!-- <h3 class="footer-heading">{{ site.title }}</h3> -->
 
     <div class="site-navigation">
       
-      <p><strong>Site Map</strong></p>
+      <p><strong>Mapa do Site</strong></p>
       <ul class="pages">
         {% for page in site.pages %}
         {% if page.title and page.main_nav != false %}
@@ -18,7 +18,7 @@
 
     <div class="site-contact">
 
-      <p><strong>Contact</strong></p>
+      <p><strong>Contatos</strong></p>
       <ul class="social-media-list">
         <li>
           <a href="mailto:{{ site.email }}">
@@ -41,10 +41,10 @@
       </ul>
     </div>
 
-    <div class="site-signature">
+<!--     <div class="site-signature">
       <p class="rss-subscribe text"><strong>Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></strong></p>
       <p class="text">{{ site.description }}</p>
-    </div>
+    </div> -->
 
   </div>
 
