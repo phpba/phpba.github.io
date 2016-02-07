@@ -1,31 +1,43 @@
 # Blog do grupo PHP Bahia
 
-Esse é o blog do grupo do PHP Bahia toda contribuição será bem vinda.
+Esse é o blog do grupo do PHP Bahia. Toda contribuição será muito bem vinda.
+
+https://phpba.github.io
 
 ## Instalação
 
-O blog foi construido usando o Jekyll, logo para fazer um post será necessário instala-lo.
+O blog foi construido usando o [jekyll], logo para fazer um post e ir olhando localmente será necessário instalá-lo e suas dependências: [jekyll-paginate] e [jekyll-sitemap].
 
-## Usage
+~~~
+$ gem install jekyll
+$ gem install jekyll-paginate
+$ gem install jekyll-sitemap
+~~~
 
-TODO: Write usage instructions
+## Uso
+
+Poderá fazer as modificações e já ir vendo o resultado. Para tal:
+
+~~~
+$ jekyll server --watch
+~~~
 
 ## Contributing
 
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
+1. Faça um fork do repositório
+2. Cria uma branch para sua contribuição: `git checkout -b sua-contribuicao`
+3. Commit as mudanças: `git commit -am 'Mensagem sobre a mudança'`
+4. Suba as alterações: `git push origin sua-contribuicao`
+5. Manda um pull request
 
-## History
+## Agradecimento
 
-TODO: Write history
+* Deixamos aqui, primeiramente, nosso agradecimento a todos os [contribuidores] do blog
+* Também não podemos deixar de agradecer ao [@bencentra][author] pelo [centrarium][theme].
 
-## Credits
-
-TODO: Write credits
-
-## License
-
-TODO: Write license
+[jekyll]: http://jekyllrb.com/
+[jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
+[jekyll-paginate]: https://github.com/jekyll/jekyll-paginate
+[contribuidores]: https://github.com/phpba/phpba.github.io/graphs/contributors
+[author]: https://github.com/bencentra/
+[theme]: https://github.com/bencentra/centrarium

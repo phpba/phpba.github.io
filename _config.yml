@@ -1,6 +1,6 @@
 # External gems
 gems:
-  - jekyll-archives # Sorry, not GitHub pages friendly!
+  - jekyll-paginate
   - jekyll-sitemap
 
 exclude:
@@ -27,16 +27,6 @@ paginate: 5
 paginate_path: "/page:num/"
 inter_post_navigation: false
 highlightjs_theme: "monokai_sublime"
-
-# Archive settings (see https://github.com/jekyll/jekyll-archives/)
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layout: 'archive'
-  permalinks:
-    category: '/category/:name/'
-    tag: '/tag/:name/'
 
 # Disqus comments
 disqus_shortname: bencentra
