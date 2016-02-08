@@ -7,7 +7,34 @@ layout: default
   <div class="scrim {% if page.cover %}has-cover{% endif %}">
     <header class="post-header">
       <h1 class="title">{{ page.title }}</h1>
-      <p class="info">by <strong>{{ page.author }}</strong></p>
+      <p class="info">by 
+				<strong>{{ page.author.name }}</strong>
+				{% if page.author.mail != null %}
+					<a href="mailto:{{ page.author.mail }}">
+						<i class="fa fa-lg fa-envelope-o" title="e-mail do autor"></i>
+					</a>
+				{% endif %}
+				{% if page.author.blog != null %}
+					<a href="{{ page.author.blog }}" target="_blank">
+						<i class="fa fa-lg fa-code" title="blog do autor"></i>
+					</a>
+				{% endif %}
+				{% if page.author.github != null %}
+						<a href="https://github.com/{{ page.author.github }}" target="_blank">
+						<i class="fa fa-lg fa-github" title="github do autor"></i>
+					</a>
+				{% endif %}
+				{% if page.author.twitter != null %}
+					<a href="https://twitter.com/{{ page.author.twitter }}" target="_blank">
+						<i class="fa fa-lg fa-twitter" title="twitter do autor"></i>
+					</a>
+				{% endif %}
+				{% if page.author.facebook != null %}
+					<a href="https://facebook.com/{{ page.author.facebook }}" target="_blank">
+						<i class="fa fa-lg fa-facebook" title="facebook do autor"></i>
+					</a>
+				{% endif %}
+			</p>
     </header>
   </div>
 </div>
