@@ -29,9 +29,9 @@ layout: default
       <div class="post-categories">
       {% if page.categories.size > 0 %}em {% for cat in page.categories %}
         {% if site.jekyll-archives %}
-        <a href="{{ site.baseurl }}/category/{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
+        <a href="{{ site.baseurl }}posts#{{ cat | capitalize }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
         {% else %}
-        <span>{{ cat | capitalize }}</span>{% if forloop.last == false %}, {% endif %}
+        <span><a target="_blank" href="{{ site.baseurl }}posts#{{ cat | capitalize }}">{{ cat | capitalize }}</a></span>{% if forloop.last == false %}, {% endif %}
         {% endif %}
       {% endfor %}{% endif %}
       </div>
