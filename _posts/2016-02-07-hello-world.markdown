@@ -10,6 +10,9 @@ author:
     twitter:
     facebook:
 categories: 
+    - Dummy
+    - Jekyll
+    - test
 tags: 
 ---
 
