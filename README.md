@@ -22,7 +22,7 @@ Poderá fazer as modificações e já ir vendo o resultado. Para tal:
 $ jekyll server --watch
 ~~~
 
-## Contributing
+## Contribuindo
 
 1. Faça um fork do repositório
 2. Cria uma branch para sua contribuição: `git checkout -b sua-contribuicao`
@@ -43,6 +43,7 @@ Para escrever um post siga os passos:
 
 ## Formato do post
 
+```YAML
 ---
 layout: post                        // Layout que será exibido o post, o nome do layout é post :)
 title:  "Hello World"               // Titulo do post  
@@ -57,6 +58,7 @@ author:
 categories:                         // Categorias do post separadas por virgula, se não houver categoria escrever "Sem categoria"
 tags:                               // Tags
 ---
+```
 
 Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi.             // Texto do post
 
