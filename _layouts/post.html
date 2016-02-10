@@ -87,12 +87,12 @@ layout: default
 {% endif %}
 {% endif %}
 
-<section class="rss">
+<!-- <section class="rss">
   <p class="rss-subscribe text"><strong>Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></strong></p>
-</section>
+</section> -->
 
 <section class="share">
-  <span>Share: </span>
+  <span>Compartilher: </span>
   {% for social in site.social %}
     {% capture full_url %}{{ site.url }}{{ site.baseurl }}{{ page.url }}{% endcapture %}
     {% if social.name == "Twitter" and social.share == true %}
