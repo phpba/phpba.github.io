@@ -9,6 +9,7 @@ author:
     blog:
     twitter:
     facebook:
+cover: /assets/header_image.jpg
 categories: 
 tags: 
 ---
