@@ -58,9 +58,10 @@ author:
 categories:                         // Categorias do post separadas por virgula, se não houver categoria escrever "Sem categoria"
 tags:                               // Tags
 ---
-```
 
-Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi.             // Texto do post
+Lorem ipsum dolor sit amet.         // Texto do post
+
+```
 
 Na documentação do [Jekyll](http://jekyllrb.com/docs/posts/) tem outras informações para posts mais complexos.
 
