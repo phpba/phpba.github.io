@@ -29,7 +29,7 @@ inter_post_navigation: false
 highlightjs_theme: "monokai_sublime"
 
 # Disqus comments
-disqus_shortname: bencentra
+disqus: phpba
 
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"

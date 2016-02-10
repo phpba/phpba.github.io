@@ -22,13 +22,47 @@ Poderá fazer as modificações e já ir vendo o resultado. Para tal:
 $ jekyll server --watch
 ~~~
 
-## Contributing
+## Contribuindo
 
 1. Faça um fork do repositório
 2. Cria uma branch para sua contribuição: `git checkout -b sua-contribuicao`
 3. Commit as mudanças: `git commit -am 'Mensagem sobre a mudança'`
 4. Suba as alterações: `git push origin sua-contribuicao`
 5. Manda um pull request
+
+## Escrevendo posts
+
+Para escrever um post siga os passos:
+
+1. Faça um fork do repositório
+2. Cria uma branch para seu post: `git checkout -b nome_do_post`
+3. Crie um arquivo na pasta `_posts` com o nome `ANO-MES-DIA-titulo.markdown` o formato da data é YYYY-MM-DD
+4. Commit o post: `git commit -am 'nome do post'`
+5. Suba o post: `git push origin nome_do_post`
+6. Manda um pull request
+
+## Formato do post
+
+```YAML
+---
+layout: post                        // Layout que será exibido o post, o nome do layout é post :)
+title:  "Hello World"               // Titulo do post  
+date:   2016-02-07 15:32:25         // Data e hora do post
+author: 
+    name: Paulo de Almeida          // Nome do autor do post
+    mail: paulodealmeida@gmail.com  // E-mail do autor
+    github: paulodealmeida          // Endereço no GitHub
+    blog:                           // Endereço do blog do autor
+    twitter:                        // Conta no Twitter
+    facebook:                       // Conta no Facebook  
+categories:                         // Categorias do post separadas por virgula, se não houver categoria escrever "Sem categoria"
+tags:                               // Tags
+---
+```
+
+Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi.             // Texto do post
+
+Na documentação do [Jekyll](http://jekyllrb.com/docs/posts/) tem outras informações para posts mais complexos.
 
 ## Agradecimento
 
