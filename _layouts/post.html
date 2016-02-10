@@ -7,7 +7,7 @@ layout: default
   <div class="scrim {% if page.cover %}has-cover{% endif %}">
     <header class="post-header">
       <h1 class="title">{{ page.title }}</h1>
-      <p class="info">by 
+      <p class="info">por 
 				<strong>{{ page.author.name }}</strong>
 				{% if page.author.mail != null %}
 					<a href="mailto:{{ page.author.mail }}">
@@ -44,9 +44,28 @@ layout: default
 {% unless page.cover %} {% include page_divider.html %} {% endunless %}
 
 <section class="post-meta">
-  <div class="post-date">{{ page.date | date: "%B %-d, %Y" }}</div>
+  <div class="post-date">
+    <!-- Whitespace added for readability -->
+    {% assign m = post.date | date: "%-m" %}
+    {{ post.date | date: "%-d" }} de
+    {% case m %}
+      {% when '1' %}Janeiro
+      {% when '2' %}Fevereiro
+      {% when '3' %}Mar&ccedil;o
+      {% when '4' %}Abril
+      {% when '5' %}Maio
+      {% when '6' %}Junho
+      {% when '7' %}Julho
+      {% when '8' %}Agosto
+      {% when '9' %}Setembro
+      {% when '10' %}Outubro
+      {% when '11' %}Novembro
+      {% when '12' %}Dezembro
+    {% endcase %} de
+    {{ post.date | date: "%Y" }}
+  </div>
   <div class="post-categories">
-  {% if page.categories.size > 0 %}in {% for cat in page.categories %}
+  {% if page.categories.size > 0 %}em {% for cat in page.categories %}
     {% if site.jekyll-archives %}
     <a href="{{ site.baseurl }}/category/{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
     {% else %}
@@ -155,7 +174,7 @@ layout: default
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  <a href="http://disqus.com" class="dsq-brlink">comentários por <span class="logo-disqus">Disqus</span></a>
 </section>
 {% endunless %}
 {% endif %}
