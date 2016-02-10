@@ -45,24 +45,7 @@ layout: default
 
 <section class="post-meta">
   <div class="post-date">
-    <!-- Whitespace added for readability -->
-    {% assign m = post.date | date: "%-m" %}
-    {{ post.date | date: "%-d" }} de
-    {% case m %}
-      {% when '1' %}Janeiro
-      {% when '2' %}Fevereiro
-      {% when '3' %}Mar&ccedil;o
-      {% when '4' %}Abril
-      {% when '5' %}Maio
-      {% when '6' %}Junho
-      {% when '7' %}Julho
-      {% when '8' %}Agosto
-      {% when '9' %}Setembro
-      {% when '10' %}Outubro
-      {% when '11' %}Novembro
-      {% when '12' %}Dezembro
-    {% endcase %} de
-    {{ post.date | date: "%Y" }}
+		{% include date.html %}
   </div>
   <div class="post-categories">
   {% if page.categories.size > 0 %}em {% for cat in page.categories %}
