@@ -15,4 +15,4 @@ Siga nos também nas redes sociais:
 [Facebook](https://www.facebook.com/PHP-BA-1452159261670420)
 [Twitter](https://twitter.com/phpba)
 
-E entre na nossa lista de discussão no [Google Groups](phpba@googlegroups.com).
+E entre na nossa lista de discussão no [Google Groups](https://groups.google.com/forum/#!forum/phpba).
