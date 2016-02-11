@@ -7,10 +7,10 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: PHP BA Blog
+title: "PHPBA Blog"
 subtitle: "Esse é o blog do grupo do PHP Bahia toda contribuição será bem vinda."
-email: phpba@googlegroups.com
-name: PHP BA
+email: "phpba@googlegroups.com"
+name: "PHPBA"
 description: >
   Esse é o blog do grupo do PHP Bahia toda contribuição será bem vinda.
 # Base URL of site (i.e. /blog). It should always start with a slash,
@@ -18,8 +18,8 @@ description: >
 # root of your server.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://phpba.github.io" # the base hostname & protocol for your site
-cover: "/assets/header_image.jpg"
-logo: "/assets/logo.jpg"
+cover: "/assets/images/header-salvador.jpg"
+logo: "/assets/images/brand.jpg"
 
 # Build settings
 markdown: kramdown

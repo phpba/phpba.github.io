@@ -4,7 +4,7 @@ title: Sobre nós
 permalink: /about/
 ---
 
-<img src="{{ site.baseurl }}/assets/elephant.jpg" title="ElePHPant" class="profile">
+<img src="{{ site.baseurl }}/assets/images/elephpant.jpg" title="ElePHPant" class="profile">
 
 Nós somos o grupo de desenvolvedores PHP da Bahia.
 

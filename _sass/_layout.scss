@@ -178,10 +178,13 @@ pre code.hljs {
   li.nav-link {
   	a {
 	    display: inline-block;
+      font-size: 0.85em;
+
 	    @include media ($tablet) {
 	      padding-right: 1.5em;
 	    }
 	  }
+
 	  &:last-child a {
 	  	@include media ($tablet) {
     		padding-right: 1em;
