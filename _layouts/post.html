@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="post">
 
-<div class="post-header-container has-cover" style="background-image: url({% if page.cover %}{{ page.cover | prepend: site.baseurl }}{% else %}/assets/header_image.jpg{% endif %});">
+<div class="post-header-container has-cover" style="background-image: url({% if page.cover %}{{ page.cover | prepend: site.baseurl }}{% else %}{{ site.cover }}{% endif %});">
   <div class="scrim has-cover">
     <header class="post-header">
       <h1 class="title">{{ page.title }}</h1>
