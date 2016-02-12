@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="post">
 
-<div class="post-header-container has-cover" style="background-image: url({% if page.cover %}{{ page.cover | prepend: site.baseurl }}{% else %}/assets/header_image.jpg{% endif %});">
+<div class="post-header-container has-cover" style="background-image: url({% if page.cover %}{{ page.cover | prepend: site.baseurl }}{% else %}{{ site.cover }}{% endif %});">
   <div class="scrim has-cover">
     <header class="post-header">
       <h1 class="title">{{ page.title }}</h1>
@@ -52,7 +52,7 @@ layout: default
     {% if site.jekyll-archives %}
     <a href="{{ site.baseurl }}/category/{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
     {% else %}
-    <span><a target="_blank" href="{{ site.baseurl }}posts#{{ cat | capitalize }}">{{ cat | capitalize }}</a></span>{% if forloop.last == false %}, {% endif %}
+    <span><a href="/posts#{{ cat | capitalize }}">{{ cat | capitalize }}</a></span>{% if forloop.last == false %}, {% endif %}
     {% endif %}
   {% endfor %}{% endif %}
   </div>
