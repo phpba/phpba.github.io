@@ -1,3 +1,9 @@
+---
+layout: page
+title: Quer postar no Blog? Saiba como!
+permalink: /writing/
+---
+
 # Blog do grupo PHP Bahia
 
 Esse é o blog do grupo do PHP Bahia. Toda contribuição será muito bem vinda.
@@ -43,7 +49,7 @@ Para escrever um post siga os passos:
 
 ## Formato do post
 
-```YAML
+{% highlight yaml %}
 ---
 layout: post                        // Layout que será exibido o post, o nome do layout é post :)
 title:  "Hello World"               // Titulo do post  
@@ -60,8 +66,8 @@ tags:                               // Tags
 ---
 
 Lorem ipsum dolor sit amet.         // Texto do post
+{% endhighlight %}
 
-```
 
 Na documentação do [Jekyll](http://jekyllrb.com/docs/posts/) tem outras informações para posts mais complexos.
 
