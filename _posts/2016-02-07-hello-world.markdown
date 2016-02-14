@@ -10,9 +10,7 @@ author:
     twitter:
     facebook:
 categories: 
-    - Dummy
-    - Jekyll
-    - test
+    - Hello World
 tags: 
 ---
 
