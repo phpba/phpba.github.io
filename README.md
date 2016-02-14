@@ -6,9 +6,9 @@ permalink: /writing/
 
 # Blog do grupo PHP Bahia
 
-Esse é o blog do grupo do PHP Bahia. Toda contribuição será muito bem vinda.
+Esse é o blog do grupo PHP Bahia. Toda contribuição será muito bem vinda.
 
-https://phpba.github.io
+[https://phpba.github.io][phpba]
 
 ## Instalação
 
@@ -49,7 +49,7 @@ Para escrever um post siga os passos:
 
 ## Formato do post
 
-{% highlight yaml %}
+~~~ yaml
 ---
 layout: post                        // Layout que será exibido o post, o nome do layout é post :)
 title:  "Hello World"               // Titulo do post  
@@ -66,7 +66,7 @@ tags:                               // Tags
 ---
 
 Lorem ipsum dolor sit amet.         // Texto do post
-{% endhighlight %}
+~~~
 
 
 Na documentação do [Jekyll](http://jekyllrb.com/docs/posts/) tem outras informações para posts mais complexos.
@@ -76,6 +76,7 @@ Na documentação do [Jekyll](http://jekyllrb.com/docs/posts/) tem outras inform
 * Deixamos aqui, primeiramente, nosso agradecimento a todos os [contribuidores] do blog
 * Também não podemos deixar de agradecer ao [@bencentra][author] pelo [centrarium][theme].
 
+[phpba]: https://phpba.com.br
 [jekyll]: http://jekyllrb.com/
 [jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
 [jekyll-paginate]: https://github.com/jekyll/jekyll-paginate
