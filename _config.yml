@@ -13,6 +13,7 @@ email: "phpba@googlegroups.com"
 name: "PHPBA"
 description: >
   Esse é o blog do grupo do PHP Bahia toda contribuição será bem vinda.
+
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
@@ -27,6 +28,7 @@ paginate: 5
 paginate_path: "/page:num/"
 inter_post_navigation: false
 highlightjs_theme: "monokai_sublime"
+permalink: /:title/
 
 # Disqus comments
 disqus: phpba
