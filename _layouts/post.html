@@ -39,6 +39,10 @@ layout: default
   </div>
 </div>
 
+{% if page.original != null %}
+<meta http-equiv="refresh" content="0;URL={{ page.original }}">
+{% endif %}
+
 <div class="wrapper">
 
 {% unless page.cover %} {% include page_divider.html %} {% endunless %}
