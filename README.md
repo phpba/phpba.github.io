@@ -54,6 +54,7 @@ Para escrever um post siga os passos:
 layout: post                        // Layout que será exibido o post, o nome do layout é post :)
 title:  "Hello World"               // Titulo do post  
 date:   2016-02-07 15:32:25         // Data e hora do post
+original:                           // Link do post original, caso tenha replicado de seu blog pessoal
 author: 
     name: Paulo de Almeida          // Nome do autor do post
     mail: paulodealmeida@gmail.com  // E-mail do autor
