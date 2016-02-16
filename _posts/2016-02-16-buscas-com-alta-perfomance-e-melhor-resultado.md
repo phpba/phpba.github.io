@@ -26,7 +26,10 @@ Posso lhe sugerir uma ferramenta que irá evitar esses transtornos, e melhor far
 Wikipedia: *ElasticSearch? (ES) é um servidor de buscas distribuído baseado no Apache Lucene. Foi desenvolvido por Shay Banon e disponibilizado sobre os termos Apache License. ElasticSearch foi desenvolvido em Java e possui código aberto liberado como sob os termos da Licença Apache.*
 
 ElasticSearch é um motor de busca distribuído baseado no Apache Lucene, é open-source e uma ótima __engine__ para buscas full-text.
-Seus recursos estão disponíveis através de uma API RESTful e benefícios como:
+
+Seus recursos estão disponíveis através de uma API RESTful.
+
+Características:
 
  * É distribuído;
  * Alta disponibilidade;
@@ -44,7 +47,7 @@ Grandes empresas da web já usam o ES, como:
 Por ser orientado a documentos o ES obviamente armazena os dados em forma de documentos e os disponibiliza em formato *JSON*.
 O documento trabalha com o conceito simples de chave e valor. As chaves são *strings* e o valor pode ser qualquer tipo de dado válido.
 
-Apenas para facilitar o entendimento vamos comparar com os conceitos do MySQL:
+Apenas para facilitar o entendimento vamos comparar com o MySQL:
 
 | ES       | MySQL
 | ---------|---------
