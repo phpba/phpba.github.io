@@ -160,3 +160,9 @@ Segundo o GitHub ele usa ElasticSearch para consultar mais de 130 bilhões de li
 Novamente, vale a pena navegar por sua documentação e conhecer os diversos recursos ofericidos por essa excelente ferramenta.
 
 Espero ter contribuído em algo para vocês e nos próximos posts abordarei funções e casos de uso mais avançados.
+
+## Referências
+1. https://www.elastic.co/guide/index.html
+2. https://www.linkedin.com/pulse/o-que-é-elasticsearch-e-como-posso-us%C3%A1-lo-douglas-falsarella
+3. http://imasters.com.br/design-ux/user-experience-design/seu-site-tao-rapido-quanto-o-google-usando-elasticsearch/
+3. https://en.wikipedia.org/wiki/Full_text_search
