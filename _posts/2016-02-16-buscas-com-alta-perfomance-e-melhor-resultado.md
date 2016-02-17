@@ -24,7 +24,7 @@ Te faço agora um simples questionamento:
 1. Sua estrutura está pronta para escalar em tempo hábil?
 2. Não teremos surpresa? *Seu chefe certamente irá lhe perguntar algo desse tipo? ``:)``*
 
-Posso lhe sugerir uma ferramenta que irá evitar esses transtornos e consequetemente lhe proporcionar uma melhor entrega nos resultados da busca na aplicação?
+Posso lhe sugerir uma ferramenta que irá evitar esses transtornos e consequetemente lhe proporcionar uma melhor entrega nos resultados da busca na sua aplicação?
 
 ## [ElasticSearch](http://www.elasticsearch.org/)
 
@@ -73,7 +73,8 @@ $ curl -XPOST '127.0.0.1:9200/mystore/product' -d '{
 ~~~
 
 Ou seja, ao ``index`` **``mystore``** no ``type`` ``product`` estamos criando um novo produto "Smartphone".
-Você pode também setar um identificador ao que deseja inserir ou também omitir, como fiz no exemplo acima e como resposta da requisição teremos algo como:
+Você pode também setar um identificador ao que deseja inserir ou também omitir se preferir como fiz no exemplo acima. 
+Como resposta da requisição teremos:
 
 ~~~ JSON
 {
@@ -151,12 +152,16 @@ $ curl -XGET '127.0.0.1:9200/mystore/products' -d '{
 Mais de novo, o ES dispõe de uma DSL muito potente, por isso vale a pena explorar bem seus recursos.
 
 ### Um pouco de conceitos
-É importante lembrarmos que o ES não é um banco relacional nos conceitos DBMS, e com essa informação você precisa internalizar que o conceito de normalização de dados e sub-queries, quase nunca são boas formas de utilização.
+
+É importante lembrarmos que o ES não é um banco relacional nos conceitos DBMS, e com essa informação você precisa internalizar que conceitos como: normalização de dados e sub-queries, [devem ser quase sempre evitados](https://www.elastic.co/guide/en/elasticsearch/guide/current/denormalization.html) afinal de contas o ES foi desenvolvido para trabalhar com grandes volumes de dados.
+
+Outro ponto importante, o ES não substitui por exemplo, um banco de dados relacional, pois como já vimos sua proposta é trabalhar com buscas full-text.
 
 ## Integração com o PHP
 
-Já existem diversas libs que permitem e facilita essa integração, nesse post vou recomendar duas. 
-A primeria é o cliente oficial, que você pode encontrar mais detalhes no [repositório oficial do ES no GitHub](https://github.com/elastic/elasticsearch-php), possui atualizações constantes e tem uma boa documentação.
+Já existem diversas libs que permitem e facilitam essa integração, nesse post vou recomendar duas.
+
+A primeira é o cliente oficial, que você pode encontrar mais detalhes no [repositório oficial do ES no GitHub](https://github.com/elastic/elasticsearch-php), possui atualizações constantes e tem uma boa documentação.
 
 A segunda é uma lib também muito utilizada chamada [**Elastica**](https://github.com/ruflin/Elastica) que não é oficial, mais que a comunidade adotou bastante. Ela possui [boa documentação](http://elastica.io) e sua comunidade é bastante ativa. Mais antes de utilizar qualquer uma dessas, lhe sugiro conhecer as duas, não custa nada. ``:P``
 
