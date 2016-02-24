@@ -103,3 +103,70 @@ importante saber das coisas novas para quando precisar, sabe como e quando usar.
 Espero que tenha ajudado em como e quando usar traits um pouquinho. Qualquer dúvida, estamos aí.
 Se querem saber um pouco mais sobre traits, no próprio portal do PHP tem bons
 [exemplos de Traits](http://php.net/manual/pt_BR/language.oop5.traits.php).
+
+### [EDITADO EM 24/02/2016]
+
+Por causa de uma [ideia](https://github.com/phpba/phpba.github.io/pull/39#issuecomment-187958850)
+de [Jonata Weber](https://github.com/jonataa), acabei colocando mais um adendo sobre testes com Trait.
+
+Eu estava fazendo no esquema de criar um objeto falso - __Mock__ - em tempo de execução que usaria minha trait
+e depois testaria. MAS, versões mais novas do PHPUnit resolveram nossos problemas: <code>getMockForTrait()</code>.
+Isso faz com que consigamos criar um objeto que usa a trait e não precisamos mais escrever código com
+a classe falsa que usa a trait.
+
+Usando a minha trait que mostrei mais acima, basta fazer algo assim no PHPUnit:
+
+~~~
+class OSCheckTraitTest extends PHPUnit_Framework_TestCase
+{
+    private $osCheck;
+    
+    public function setUp()
+    {
+        $this->osCheck = $this->getMockForTrait(OSCheckTrait::class);
+    }
+
+    public function testReturnsUnixRunningOnLinux()
+    {
+        $this->assertEquals('unix', $this->osCheck->serverOS());
+    }
+}
+~~~
+
+Reparem como fucou super fácil trabalhar os testes das traits. E ainda tem mais: se a trait tiver
+métodos abstratos, podemos fazer algo assim para falsificar esse método - __*method mocking*__:
+
+~~~
+class OSCheckTraitTest extends PHPUnit_Framework_TestCase
+{
+    private $osCheck;
+    
+    public function setUp()
+    {
+        $this->osCheck = $this->getMockForTrait(OSCheckTrait::class);
+        $this->osCheck->expects($this->any())
+                ->method('getSomething')  // Um método abstrato qualquer da trait
+                ->willReturn([10, 20, 30]);
+    }
+
+    public function testReturnsUnixRunningOnLinux()
+    {
+        $this->assertEquals('unix', $this->osCheck->serverOS());
+    }
+
+    public function testGetSomethingIsOnlyIntegers()
+    {
+        $this->assertContainsOnly('int', $this->osCheck->getSomething());
+    }
+
+    public function testGetSomethingHasThreeElements()
+    {
+        $this->assertCount(3, $this->osCheck->getSomething());
+    }
+
+}
+~~~
+
+Muito fácil. Mais uma vez, __PHPUNIT TO THE RESCUE!!!__
+
+######(Nota mental: contribuir para o PHPUnit de alguma forma)
