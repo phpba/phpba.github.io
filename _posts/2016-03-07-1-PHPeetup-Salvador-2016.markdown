@@ -15,7 +15,7 @@ categories:
 tags: 
 ---
 
-Pessoal, depois de um turbilhão de ideias e contribuições e pessoas novas e atividades, teremos o primeiro encontro do grupo PHP-BA.
+Pessoal, depois de um turbilhão de ideias e contribuições e pessoas novas e atividades, teremos o primeiro encontro do grupo PHP-BA de 2016.
 Esse é um evento sem fins lucrativos que tem como principal objetivo reunir estudantes, profissionais e entusiastas  da linguagem PHP a fim de formentar discussões em torno da linguagem mais popular do ambiente web, fortalecendo assim seu ecossistema e a comunidade de software local.
 
 O evento será realizado em Salvador, Bahia, na Universidade Ruy Barbosa no dia 09 de abril a partir das 13h.
