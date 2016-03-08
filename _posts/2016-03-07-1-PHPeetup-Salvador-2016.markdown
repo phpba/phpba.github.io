@@ -34,9 +34,11 @@ O [Call for Papers](http://speakerfight.com/events/1o-phpeetup-salvador-2016) es
 * 17h00 - Lightning Talks
 * 17h45 - Encerramento
 
-Inscreva-se através desse [link](http://even.tc/1o-phpeetup).
+Inscreva-se já através desse [link](http://even.tc/1o-phpeetup).
 
 > PS.: Só faça sua inscrição se realmente tiver certeza que estará presente, pois as vagas são limitadas e você pode tirar a vaga de alguém que poderia ir! ;)
+
+É um evento realizado com muito carinho da comunidade para a comunidade, então venha prestigiar! :D
 
 Acompanhem o PHPBA nas redes sociais:
 [Twitter](https://twitter.com/phpba)  
