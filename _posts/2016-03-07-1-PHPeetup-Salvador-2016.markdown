@@ -17,7 +17,7 @@ tags:
 
 Pessoal, depois de um turbilhão de ideias e contribuições e pessoas novas e atividades, teremos o primeiro encontro do grupo PHP-BA de 2016.
 
-Esse é um evento sem fins lucrativos que tem como principal objetivo reunir estudantes, profissionais e entusiastas da linguagem PHP a fim de formentar discussões em torno da linguagem mais popular do ambiente web, fortalecendo assim seu ecossistema e a comunidade de software local.
+Esse é um evento sem fins lucrativos que tem como principal objetivo reunir estudantes, profissionais e entusiastas da linguagem PHP a fim de fomentar discussões em torno da linguagem mais popular do ambiente web, fortalecendo assim seu ecossistema e a comunidade de software local.
 
 O evento custará apenas **01 kg de alimento não perecível** e será realizado na Faculdade Ruy Barbosa no dia 09 de abril a partir das 13h. Os alimentos serão doados ao GACC (Grupo de Apoio à Crianças com Câncer da Bahia).
 
@@ -25,7 +25,7 @@ O [Call for Papers](http://speakerfight.com/events/1o-phpeetup-salvador-2016) es
 
 **PROGRAMAÇÃO**
 
-| Horário |          |
+| PROGRAMAÇÃO        |
 --------- | -------- |
 | 13h00   | Recepção |
 | 13h30   | Abertura |
