@@ -25,7 +25,7 @@ O [Call for Papers](http://speakerfight.com/events/1o-phpeetup-salvador-2016) es
 
 **PROGRAMAÇÃO**
 
-| PROGRAMAÇÃO        |
+| Horário |
 --------- | -------- |
 | 13h00   | Recepção |
 | 13h30   | Abertura |
