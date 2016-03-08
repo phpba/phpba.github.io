@@ -42,7 +42,7 @@ Inscreva-se já através desse [link](http://even.tc/1o-phpeetup).
 
 É um evento realizado com muito carinho da comunidade para a comunidade, então venha prestigiar! :D
 
-Acompanhem o PHPBA nas redes sociais:
+Acompanhem o PHPBA nas redes sociais:  
 [Twitter](https://twitter.com/phpba)  
 [Facebook](https://www.facebook.com/PHPBA-1452159261670420/)  
 [Telegram](https://telegram.me/joinchat/CKBipAbp_l_UlHLcsDu2Zw)
