@@ -40,7 +40,7 @@ Inscreva-se já através desse [link](http://even.tc/1o-phpeetup).
 
 > PS.: Só faça sua inscrição se realmente tiver certeza que estará presente, pois as vagas são limitadas e você pode tirar a vaga de alguém que poderia ir! ;)
 
-É um evento realizado com muito carinho da comunidade para a comunidade, então venha prestigiar! :D
+É um evento realizado com muito carinho pela comunidade para a comunidade, então venha prestigiar! :D
 
 Acompanhem o PHPBA nas redes sociais:  
 [Twitter](https://twitter.com/phpba)  
