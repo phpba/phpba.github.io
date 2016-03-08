@@ -25,14 +25,16 @@ O [Call for Papers](http://speakerfight.com/events/1o-phpeetup-salvador-2016) es
 
 **PROGRAMAÇÃO**
 
-* 13h00 - Recepção
-* 13h30 - Abertura
-* 13h45 - Palestra
-* 14h45 - Palestra
-* 15h45 - Intervalo
-* 16h00 - Palestra
-* 17h00 - Lightning Talks
-* 17h45 - Encerramento
+| Horário |          |
+--------- | -------- |
+| 13h00   | Recepção |
+| 13h30   | Abertura |
+| 13h45   | Palestra |
+| 14h45   | Palestra |
+| 15h45   | Intervalo |
+| 16h00   | Palestra |
+| 17h00   | Lightning Talks |
+| 17h45   | Encerramento |
 
 Inscreva-se já através desse [link](http://even.tc/1o-phpeetup).
 
