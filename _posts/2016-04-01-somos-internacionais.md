@@ -13,8 +13,8 @@ categories:
     - php
     - comunidade
 tags: 
-	- github
-	- comunidade
+    - github
+    - comunidade
 ---
 
 Galera, é com imensa felicidade que venho informar que somos quase internacionais.
@@ -25,6 +25,8 @@ No nosso grupo do Telegram surgiu um link do repositorio [Comunity Data](https:/
 
 Inclui o PHPBA na lista e mandei o pull request, em poucos minutos foi aceito e aqui estou compartilhando com vocês.
 
-Convido a todos a colaborarem com software livre, seja qual for o projeto e com o nosso blog.
+Convido a todos a colaborarem com software livre, seja qual for o projeto. Gildásio, um de nossos membros fez um [post](http://gjuniioor.github.io/blog/contribuindo-projetos-open-source/) excelente sobre como ajudar.
+
+Colabore também com o nosso blog, é mais fácil do que você imagina, [olha aqui](http://phpba.com.br/writing/).
 
 Isso é comunidade, isso é colaboração, isso somos nós!
