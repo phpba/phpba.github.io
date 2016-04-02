@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Gerenciando dependências com composer"
-date: 2016-04-01 12:26:00
+date: 2016-04-02 12:26:00
 original: http://blog.viniciuscruz.com/2013/03/gerenciando-dependencias-no-php-com-composer/
 author:
     name: Vinicius Cruz
