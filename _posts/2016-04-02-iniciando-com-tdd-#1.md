@@ -11,6 +11,7 @@ author:
     facebook: "fx3costa"
 categories: 
     - php
+    - tdd
 tags: 
     - tdd
     - php
@@ -28,7 +29,7 @@ Aquele estilo de codificar, entregando a primeira solução que me viesse a cabe
 ao menos pensar no design da aplicação e aqueles testes manuais que as vezes tomavam mais tempo
 que o tempo de codificação começaram a não mais fazer sentido.
 
-O software era entregue, em menos de 5 horas surgiam os primeiros bugs. Mas como? Eu pensava. Eu o testei completamente. Até soltava a famosa frase: "Mas funciona na minha máquina!". Não fazia sentido. Como algo que eu testei aqui funcionava e em produção não? Será que os meus testes
+O software era entregue, porém em menos de 5 horas surgiam os primeiros bugs. Mas como? - eu pensava. "Eu o testei completamente". Até soltava a famosa frase: "Mas funciona na minha máquina!". Não fazia sentido. Como algo que eu testei aqui funcionava e em produção não? Será que os meus testes
 realmente eram eficazes ou confiáveis? Piorava quando aparecia uma nova feature. Ela era concluída e testada - da mesma maneira ruim - e em produção simplesmente quebrava as antigas features. Mas era óbvio. Afinal, são quase trocentas features, como ficar testando cada uma delas a cada nova funcionalidade?
 
 Foi que acabei encontrando, por acaso como na maioria dos casos, o conceito de testes automatizados.
@@ -43,7 +44,7 @@ foi meu primeiro contato?
 
 Mudar a forma de pensar e agir de algo que você já faz é árduo. Assim como foi para mim pensar em [NoSQL](https://pt.wikipedia.org/wiki/NoSQL), foi para mim pensar em TDD. O que? como criar um teste de algo que ainda nem existe?
 
-Assim também como todo bom iniciante, fui atrás dessas e outras perguntas e elas motivaram não só meu inicio como minha primeira ajuda com o assunto. [Nelson Senna](http://nelsonsar.github.io/), mais conhecido pela comunidade PHP Brasil, me ofereceu gentilmente ajuda dando a ideia de um [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming). Nem preciso dizer que aceitei sem nem pensar, né? Um cara com a experiência dele e um defensor da filosofia TDD, puts, ou entendia de vez ou então entendia de vez.
+Assim também como todo bom iniciante, fui atrás dessas e outras perguntas e elas motivaram não só no meu inicio como minha primeira ajuda com o assunto. [Nelson Senna](http://nelsonsar.github.io/), mais conhecido pela comunidade PHP Brasil, me ofereceu gentilmente ajuda dando a ideia de um [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming). Nem preciso dizer que aceitei sem nem pensar, né? Um cara com a experiência dele e um defensor da filosofia TDD, puts, ou entendia de vez ou então entendia de vez.
 
 Agradeço ao Nelson pela grande ajuda e por ser o motivador desse artigo.
 
@@ -51,8 +52,8 @@ Então, como começar? Perguntar para quem mais tem experiência é um ótimo co
 
 ### A ideia e o ambiente
 
-Como o proprio Nelson fala em seu [artigo](http://nelsonsar.github.io/2016/02/23/How-I-practice-TDD.html), começar a aprender TDD com códigos reais, códigos de produção, pode não ser uma boa alternativa devido a complexidade existente naquele cenário, que pode
-dificultar o entendimento de algumas coisas e adoção progressiva da filosofia. Então, podemos começar do mais simples, certo? Certo, mas mais do que simples, algo funcional, que nós faça realmente ter um problema de design e que nos faça exercitar nosso poder de soluções.
+Como o próprio Nelson fala em seu [artigo](http://nelsonsar.github.io/2016/02/23/How-I-practice-TDD.html), começar a aprender TDD com códigos reais, códigos de produção, pode não ser uma boa alternativa devido a complexidade existente naquele cenário, que pode
+dificultar o entendimento de algumas coisas e adoção progressiva da filosofia. Então, podemos começar do mais simples, certo? Certo, mas mais do que simples, algo funcional, que nos faça realmente ter um problema de design e que nos faça exercitar nosso poder de soluções.
 
 Então, conheci o [Project Euler](https://projecteuler.net/archives) que é um projeto muito interessante, como um repositório de problemas matemáticos de diferentes níveis, inclusive os mais básicos que nos permitem ter um bom cenário para testar. E o principal de tudo: o caso simples do problema é entregue pela questão. O que facilita os nossos testes porque sabemos exatamente o que vamos fazer e o que nossa classe deve retornar para nós.
 
