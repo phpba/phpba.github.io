@@ -234,13 +234,26 @@ Mas do ponto de vista do design OO, essa não é ainda uma boa solução. É nes
 
 O pensamento é: o que pode ser melhorado? Aparenta ser um método inofensivo que simplesmente retorna o que ele deve. Não há nada o que melhorar? Sim, há, e, pelo menos dessa vez, vos entregarei o que está errado nela.
 
-O nome do método é sum(), logo, ele tem a responsabilidade de somar algo. Ele faz isso enquanto ele está em loop e ele retorna isso. Mas há algo dentro dele que não é uma soma.
-
 ~~~
 if($i % 3 == 0 || $i % 5 == 0) {
 ~~~
 
+<del>
+O nome do método é sum(), logo, ele tem a responsabilidade de somar algo. Ele faz isso enquanto ele está em loop e ele retorna isso. Mas há algo dentro dele que não é uma soma.</del>
+
+<del>
 Isso não me parece ser um trabalho de uma classe que soma. Saber se um número é ou não múltiplo não deve ser responsabilidade de um método que promete somar e entregar somas. Não há reuso de código. Estamos ferindo diretamente [SRP - Single Responsability Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle) - Responsabilidades únicas para cada classe e para cada método. MultipleCalculator só pode ser responsável por calcular múltiplos enquanto seus métodos devem possuir uma responsabilidade em específico.
+</del>
+
+**UPDATE 05/04** - *Na verdade, não há quebra de SRP. SRP significa que a classe tem que ter um e somente um motivo para mudar, e é o que está acontecendo. Essa classe só tem um motivo para mudar: Retornar a soma de múltiplos de 3 e 5. Ainda por cima, não iremos reutilizar esse método em nenhum outro lugar, então o melhor local para ele estar presente é exatamente nessa classe. Peço desculpas por esse equívoco. Obrigado ao Nelson pelo alerta.*
+
+Mas então, posso usar dessa forma? Não, e o primeiro dos motivos é que esse trecho é um problema clássico, por assim dizer, que o refactoring resolve, chamado [Decompose Conditional](https://sourcemaking.com/refactoring/decompose-conditional).
+
+O problema é que quanto maior o trecho do código mais complexo vai se tornando o entendimento
+do código, e isso tende aumentar se tivermos uma condicional complexa e é nessa tentativa de entendimento que você acaba se preocupando mais em entender o que está dentro das condicionais do que em entender o código relevante em si. Ou seja, remover condicionais como essas para métodos
+com assinaturas que expressem o que ele tende a fazer é um grande benefício para a vida do código.
+
+O [SourceMaking](https://sourcemaking.com/refactoring/refactorings) possui diversos problemas comuns de código e soluções de refactoring para todos eles. Vale a pena deixar debaixo do travesseiro.
 
 Um guia que é recomendável - pra não dizer obrigatório - seguir quando estamos desenvolvendo, principalmente com testes porque fica bem mais visivel, é o catalogo de [Objects Calisthenics](http://williamdurand.fr/2013/06/03/object-calisthenics/).
 Eles apresentam algumas regras para escrever um bom código OO. Se dermos uma olhada no catalogo e compararmos com nosso código poderemos saber se ele está próximo ou não do ideal. E vemos que logo no primeiro problema citado pelo catalogo o nosso falha:
@@ -273,7 +286,7 @@ class MultipleCalculator
         $sum = 0;
 
         for($iterator = 0; $iterator < $limit; $iterator++) {
-            $sum += $this->isDivisible($iterator);
+            $this->isDivisible($iterator) ? $sum += $iterator : '';
         }
 
         return $sum;
@@ -281,15 +294,21 @@ class MultipleCalculator
 
     /**
      * @param $number
-     * @return mixed
+     * @return bool
      */
     private function isDivisible($number)
     {
-        if($number % 3 == 0 || $number % 5 == 0)
-            return $number;
+        if($number % 3 == 0 || $number % 5 == 0) {
+            return true;
+        }
+
+        return false;
     }
 }
 ~~~
+
+**UPDATE 05/04** - *O código acima foi alterado porque o método isDivisible, pela sua assinatura,
+deve retornar um boolean e não retornar o número recebido como parametro, que era como estava anteriormente (thanks, Nelson!).*
 
 Rodou? Green. Ciclo completo, classe pronta, unidade testada. Podemos garantir que essa classe funciona e mesmo que hajam mudanças, saberemos de maneira muito rápida se ainda funciona ou não. Basta acionar nossa suite de testes novamente.
 
