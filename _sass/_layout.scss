@@ -212,13 +212,19 @@ pre code.hljs {
 		@include outer-container;
 		// padding: 1em 0;
 		color: $medium-gray;
-		.post-date {
-			@include span-columns(6);
+		.post-date, {
+			@include span-columns(4);
 			text-align: left;
 			font-size: 0.9em;
 		}
+		.post-author {
+			@include span-columns(4);
+			text-align: center;
+			font-size: 0.9em;
+			margin-left: 0;
+		}
 		.post-categories {
-			@include span-columns(6);
+			@include span-columns(4);
 			margin-right: 0;
 			text-align: right;
 			font-size: 0.9em;
