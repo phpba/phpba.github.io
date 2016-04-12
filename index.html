@@ -26,6 +26,9 @@ layout: default
       <div class="post-date">
 				{% include date.html %}
       </div>
+	  <div class="post-author">
+	  			{{ page.author.name }}
+	  </div>
       <div class="post-categories">
       {% if page.categories.size > 0 %}em {% for cat in page.categories %}
         {% if site.jekyll-archives %}
