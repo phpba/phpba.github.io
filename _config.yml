@@ -8,11 +8,10 @@ exclude:
 
 # Site settings
 title: "PHPBA Blog"
-subtitle: "Esse é o blog do grupo do PHP Bahia toda contribuição será bem vinda."
+subtitle: "Esse é o blog do grupo PHPBA. Toda contribuição será bem vinda!"
 email: "phpba@googlegroups.com"
 name: "PHPBA"
-description: >
-  Esse é o blog do grupo do PHP Bahia toda contribuição será bem vinda.
+description: "Esse é o blog do grupo PHPBA. Toda contribuição será bem vinda!"
 
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
