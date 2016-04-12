@@ -28,7 +28,7 @@ O Evento começou com **Jonata Weber** apresentando os membros core do grupo PHP
 
 Outro ponto importante esclarecido foi sobre o **PHPeste, Conferência de PHP do Nordeste,** que ano passado ocorreu em João Pessoa e foi um sucesso. Esse ano Salvador foi escolhida para sediar o evento e o grupo PHP-BA vai ficar a frente dessa organização.
 
-Iniciando as séries de palestras do dia, começamos com **Marcio Albuquerque e a palestra PHP Episódio VII – O Despertar da Força**. Usando como referência a Saga Star Wars, Marcio transcorreu sobre a história do PHP desde sua criação, passando pelas novidades do PHP 7 e fechando com o que vem no futuro de nossa amada linguagem. Simplesmente sensacional
+Iniciando as séries de palestras do dia, começamos com **Marcio Albuquerque e a palestra [PHP Episódio VII – O Despertar da Força](http://culturabeta.com.br/presentations/php-episode-VII/)**. Usando como referência a Saga Star Wars, Marcio transcorreu sobre a história do PHP desde sua criação, passando pelas novidades do PHP 7 e fechando com o que vem no futuro de nossa amada linguagem. Simplesmente sensacional
 
 ![Marcio](/assets/posts/2016/03/marcio.jpg)
 
