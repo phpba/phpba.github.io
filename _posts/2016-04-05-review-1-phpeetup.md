@@ -76,6 +76,6 @@ Como todos sabem o ingresso para o evento foi 1kg de alimento não perecível qu
 
 Tem uma frase de Robert Fripp que acho muito legal e gostaria de compartilhar com vocês.
 
-> ### “Não esteja disposto a ajudar: esteja disponível" 
+> ### “Não esteja disposto a ajudar: esteja disponível"
 
-Então faça sua parte também
+Então faça sua parte também.
