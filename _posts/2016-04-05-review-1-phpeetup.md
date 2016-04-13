@@ -42,7 +42,7 @@ Explicar **TDD(Desenvolvimento Orientado a Testes)** nunca foi fácil. Não para
 
 ![Paulo](/assets/posts/2016/04/1phpeetup/paulo.jpg) 
 
-Depois das três palestras iniciais, entramos no momento **Lightning Talk** do dia e o escolhido para começar foi **[Vinicio Cruz](https://github.com/vinaocruz)**, mais conhecido como Vinão, ou Mr. Vini. Com a palestra **[Prazer, banco de grafos](https://speakerdeck.com/vinaocruz/prazer-banco-de-grafo)** Vini deu um rápida explicação sobre a **teoria dos grafos** e como funciona na prática usando como exemplo os relacionamentos entre amizades e menções no twitter. Depois ele apresentou o sensacional banco de dados [ArangoDB](https://www.arangodb.com/) e sua interface gráfica de gerenciamento.
+Depois das três palestras iniciais, entramos no momento **Lightning Talk** do dia e o escolhido para começar foi **[Vinicius Cruz](https://github.com/vinaocruz)**, mais conhecido como Vinão, ou Mr. Vini. Com a palestra **[Prazer, banco de grafos](https://speakerdeck.com/vinaocruz/prazer-banco-de-grafo)** Vini deu um rápida explicação sobre a **teoria dos grafos** e como funciona na prática usando como exemplo os relacionamentos entre amizades e menções no twitter. Depois ele apresentou o sensacional banco de dados [ArangoDB](https://www.arangodb.com/) e sua interface gráfica de gerenciamento.
 
 ![Vinicio Cruz](/assets/posts/2016/04/1phpeetup/vini.jpg)
 
