@@ -59,3 +59,23 @@ E último assunto do dia, fechando com chave de outro, **o famoso PHPinga**. Nem
 E você o que achou do evento? Deixe seu comentário.
 
 Abraços!
+
+---
+
+**Atualizações do evento em 12/04/2016**
+
+### Entrega dos alimentos
+
+Como todos sabem o ingresso para o evento foi 1kg de alimento não perecível que foi entregue hoje (12/04/2016) por Marcio Albuquerque ao [GACC, Grupo de Apoio à Criança com Câncer-Bahia](http://gaccbahia.org.br/). Para quem não conhece o GACC é uma entidade filantrópica fundada em 1988 por um grupo de médicos e pais de criança com câncer com o objetivo de dar suporte a todas as crianças carentes do estado da Bahia e às suas famílias, evitando o abandono do tratamento. Existem diversas formas de colaborar com a instituição. Quer ajudar? [Veja como acessando o site da instituição](http://gaccbahia.org.br/como-colaborar).
+
+![Entrega dos alimentos](/assets/posts/2016/04/1phpeetup/foto1.jpg)
+
+![Entrada do GACC](/assets/posts/2016/04/1phpeetup/foto2.jpg)
+
+![Entrada do GACC parte 2](/assets/posts/2016/04/1phpeetup/foto3.jpg)
+
+Tem uma frase de Robert Fripp que acho muito legal e gostaria de compartilhar com vocês.
+
+> ### “Não esteja disposto a ajudar: esteja disponível"
+
+Então faça sua parte também, afinal, comunidade é mais que código.
