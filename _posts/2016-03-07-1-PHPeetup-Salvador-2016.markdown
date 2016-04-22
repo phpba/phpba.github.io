@@ -12,6 +12,7 @@ author:
 categories: 
     - eventos
     - php
+    - phpeetup
 tags: 
 ---
 
