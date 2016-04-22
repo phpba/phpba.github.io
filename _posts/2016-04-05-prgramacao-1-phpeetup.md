@@ -12,6 +12,7 @@ author:
 categories: 
     - php
     - Eventos
+    - phpeetup
 tags: 
     - tdd
     - eventos
