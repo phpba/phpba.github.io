@@ -7,8 +7,8 @@ author:
     mail: "gjuniioor@protonmail.ch"
     github: "gjuniioor"
     blog: "https://gjuniioor.github.io"
-    twitter: ""
-    facebook: ""
+    twitter:
+    facebook:
 categories: 
     - php
     - comunidade
