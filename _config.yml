@@ -80,6 +80,13 @@ social:
     desc: Fork me on GitHub
     share: false
 
+  - name: Telegram
+    icon: paper-plane
+    username: phpba
+    url: https://telegram.me/phpba
+    desc: Grupo do PHPBA no Telegram
+    share: true
+
   # - name: LinkedIn
   #   icon: linkedin
   #   username: Ben Centra
