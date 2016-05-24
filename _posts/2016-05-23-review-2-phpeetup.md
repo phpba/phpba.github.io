@@ -24,7 +24,7 @@ Um agradecimento especial para a Faculdade Unime que nos cedeu o espaço.
 
 ### E agora, vamos aos melhores momentos.
 
-O evento começou com [Gildásio Júnior](https://github.com/gjuniioor) falando da força da comunidade e do que deve ser feito para que cada um participe e contribua com a palestra [Você precisa da comunidade e ela de você!]().
+O evento começou com [Gildásio Júnior](https://github.com/gjuniioor) falando da força da comunidade e do que deve ser feito para que cada um participe e contribua com a palestra [Você precisa da comunidade e ela de você!](https://gjuniioor.github.io/talks/voce-precisa-da-comunidade/).
 
 ![Gildásio Júnior](/assets/posts/2016/05/2phpeetup/gildasio.jpg)
 
@@ -57,7 +57,7 @@ Por ser um evento gratuito, não tínhamos verba para um coffee break. Não seja
 
 ![Bolo](/assets/posts/2016/05/2phpeetup/bolo.jpg)
 
-Para encerrar tivemos uma palestra free style com [Márcio Albuquerque](https://github.com/mlalbuquerque), [Paulo Almeida](https://github.com/paulodealmeida) e [Allan Barbosa]().
+Para encerrar tivemos uma palestra free style com [Márcio Albuquerque](https://github.com/mlalbuquerque), [Paulo Almeida](https://github.com/paulodealmeida) e [Allan Barbosa](https://github.com/allanbarbosa).
 Márcio falou um monte de novidades e possibilidade do PHP e os demais... ajudaram.
 
 E no final deu tudo certo, muita gente empolgada para os próximos eventos, muitas ideias para o PHPeste e mais atividades.
