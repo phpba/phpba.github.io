@@ -3,12 +3,12 @@ layout: post
 title:  "O que rolou no 2º PHPeetup do PHPBA em 2016"
 date:   2016-04-11 08:44:00
 author: 
-    name: "Ediaimo Borges"
-    mail: "edyonil@gmail.com"
-    github: "edyonil"
-    blog: ""
-    twitter: "@edyonil"
-    facebook: "edyonildesigner"
+    name: Paulo de Almeida
+    mail: paulodealmeida@gmail.com
+    github: paulodealmeida
+    blog:
+    twitter: paulodealmeida
+    facebook:
 categories: 
     - eventos
     - phpeetup
