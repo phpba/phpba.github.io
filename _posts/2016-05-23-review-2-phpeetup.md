@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "O que rolou no 2º PHPeetup do PHPBA em 2016"
-date:   2016-04-11 08:44:00
+date:   2016-05-23 08:44:00
 author: 
     name: Paulo de Almeida
     mail: paulodealmeida@gmail.com
