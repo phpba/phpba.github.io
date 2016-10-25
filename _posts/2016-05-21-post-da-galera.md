@@ -10,7 +10,10 @@ author:
     blog:                
     twitter: paulodealmeida
     facebook:              
-categories: phpeetup, live, code
+categories:
+    - phpeetup
+    - live
+    - code
 tags:                      
 ---
 
