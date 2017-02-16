@@ -24,7 +24,7 @@ E começou o ano, e quem disse que na Bahia o ano só começa depois do carnaval
 
 Pois tivemos o primeiro evento do PHPBA no interior do estado, na cidade de Feira de Santana. E adivinhem? Foi um sucesso!
 
-Caímos na estrada para prestigiar as caloroas pessoas da princesa do sertão. Lá encontramos um auditorio lotado. Foram 190 inscritos!
+Caímos na estrada para prestigiar as calorosas pessoas da princesa do sertão. Lá encontramos um auditorio lotado. Foram 190 inscritos!
 
 O evento começou com uma breve apresentação de Jotana e de tudo o que iria acontecer, ou seja, palestras, workshop e hackathon. Foram três atividades simultâneas.
 
