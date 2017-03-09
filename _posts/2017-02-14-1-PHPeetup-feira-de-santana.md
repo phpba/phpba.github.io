@@ -1,5 +1,6 @@
 ---
 layout: post
+cover: /assets/images/phpba-na-estrada-feira-2017.jpg
 title:  "PHPBA na Estrada - Feira de Santana 2017"
 date:   2017-02-14 09:32:25
 author: 
