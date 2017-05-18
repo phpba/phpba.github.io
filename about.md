@@ -6,7 +6,7 @@ permalink: /about/
 
 <img src="{{ site.baseurl }}/assets/images/elephpant.jpg" title="ElePHPant" class="profile">
 
-Nós somos o grupo de desenvolvedores PHP da Bahia.
+Nós somos o grupo de desenvolvedores PHP da Bahia, criado em setembro de 2011 por [Hugo Henrique](http://twitter.com/hugohenrique), hoje uma comunidade muito ativa, com diversas ações em andamento.
 
 Por ser um grupo de voluntários, aceitamos ajuda com posts e contribuições, basta fazer um fork do nosso repositório no [GitHub](https://github.com/phpba/phpba.github.io) e um pull request. Para mais detalhes, veja nosso [guia de contribuição](/writing).
 
