@@ -278,6 +278,7 @@ Pronto!! Mudamos o comando e quando iniciar o serviço `php`, ele inicia com o c
 # Conclusão
 Temos agora um ambiente para trabalhar com PHP de forma simples e que podemos configurar como quisermos, com opcionais para trabalhar com outros serviços. Nos prṍximos posts falarei sobre outros tópicos:
 
+* Como trabalhar com este ambiente
 * Imagem do PHP já vir com algum framework (Laravel, Symfony e Zend Expressive)
 * Docker Compose para testes automatizados com Selenium
 * Configurar IDE para trabalhar com o XDebug do conteiner (Netbeans e Visual Studio Code)
