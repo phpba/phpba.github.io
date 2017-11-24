@@ -20,7 +20,7 @@ $ gem install jekyll-paginate
 $ gem install jekyll-sitemap
 ~~~
 
-## Docker
+## Docker e Docker Compose
 
 Em alternativa a ter de sujar sua máquina com instalações assim para cada projeto pode-se utilizar Docker!
 
@@ -30,6 +30,11 @@ Para rodar, você executa o seguinte comando:
 
 ~~~
 $ docker run -d --name phpba -v "$(pwd):/usr/src/app" -p 4000:4000 starefossen/github-pages
+~~~
+
+Se preferir, pode usar o [Docker Compose][docker-compose] para rodar (já existe o arquivo docker-compose.yml):
+~~~
+$ docker-compose up -d
 ~~~
 
 E então já poderá acessar [http://localhost:4000](http://localhost:4000) para ver o blog.
@@ -105,4 +110,5 @@ Na documentação do [Jekyll](http://jekyllrb.com/docs/posts/) tem outras inform
 [author]: https://github.com/bencentra/
 [theme]: https://github.com/bencentra/centrarium
 [docker]: https://docs.docker.com/engine/installation/linux/
+[docker-compose]: https://docs.docker.com/compose/install/
 [docker-githubpages]: https://hub.docker.com/r/starefossen/github-pages/
