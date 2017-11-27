@@ -239,7 +239,7 @@ database:
 ```
 
 #### Nginx no lugar do Apache
-Mais uma vez, basta trocar as diretivas de `webserver`:
+Mais uma vez, basta trocar as diretivas de `webserver` e mudar apenas uma linha em `php`:
 
 ```yaml
 webserver:
@@ -255,6 +255,10 @@ webserver:
         WEB_PHP_SOCKET: "php:9000"
         WEB_PHP_TIMEOUT: 600
         WEB_DOCUMENT_ROOT: "/app"
+php:
+    volumes:
+        # mude APENAS o primeiro volume neste serviço
+        - ".:/app" # no lugar de .:/var/www/html
 ```
 
 #### Servidor PHP embutido no lugar do Apache
@@ -262,18 +266,18 @@ Não mudamos o `docker-compose.yml`, dessa vez. Agora, precisaríamos modificar 
 
 ```dockerfile
 # Colocar estas linhas no final do arquivo php7.1.dockerfile
-ENTRYPOINT php -S localhost:80
-CMD -t /app
+EXPOSE 8080
+CMD ["php", "-S", "0.0.0.0:8080", "-t", "/var/www/html"]
 ```
 
-No caso acima, agora nosso serviço `php` já inicia rodando o servidor embutido, na porta 80 e apontando a pasta `/app` do conteiner como o **Document Root** de nosso projeto. Como a diretiva `CMD` é quem indica o caminho, e esta diretiva sempre pode ser sobrescrita dentro do docker-compose.yml, caso precise apontar para outra pasta, digamos `/app/public`, podemos fazer da seguinte maneira no serviço `php`:
+No caso acima, agora nosso serviço `php` já inicia rodando o servidor embutido, na porta 80 e apontando a pasta `/var/www/html` do conteiner como o **Document Root** de nosso projeto. Como a diretiva `CMD` é quem indica o caminho, e esta diretiva sempre pode ser sobrescrita dentro do docker-compose.yml, caso precise apontar para outra pasta, digamos `/app/public`, podemos fazer da seguinte maneira no serviço `php`:
 
 ```yaml
 # coloque esta diretiva a mais no serviço php do docker-compose.yml
-command: "-t /app/public"
+command: ["php", "-S", "0.0.0.0:8080", "-t", "/app/public"]
 ```
 
-Pronto!! Mudamos o comando e quando iniciar o serviço `php`, ele inicia com o comando `php -S localhost:80 -t /app/public`
+Pronto!! Mudamos o comando e quando iniciar o serviço `php`, ele inicia com o comando `php -S 0.0.0.0:8080 -t /app/public`.
 
 # Conclusão
 Temos agora um ambiente para trabalhar com PHP de forma simples e que podemos configurar como quisermos, com opcionais para trabalhar com outros serviços. Nos prṍximos posts falarei sobre outros tópicos:
