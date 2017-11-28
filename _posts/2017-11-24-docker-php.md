@@ -268,7 +268,20 @@ EXPOSE 8080
 CMD ["php", "-S", "0.0.0.0:8080", "-t", "/var/www/html"]
 ```
 
-No caso acima, agora nosso serviço `php` já inicia rodando o servidor embutido, na porta 8080 e apontando a pasta `/var/www/html` do conteiner como o **Document Root** de nosso projeto. Como a diretiva `CMD` é quem indica o caminho, e esta diretiva sempre pode ser sobrescrita dentro do docker-compose.yml, caso precise apontar para outra pasta, digamos `/app/public`, podemos fazer da seguinte maneira no serviço `php`:
+No caso acima, agora nosso serviço `php` já inicia rodando o servidor embutido, na porta 8080 e apontando a pasta `/var/www/html` do conteiner como o **Document Root** de nosso projeto. Neste caso, precisamos reconstruir nossa imagem. Podemos fazer isso através do Docker:
+
+```shell
+$ docker build -t mlalbuquerque/php:7.1 -f php7.1.dockerfile .
+```
+Lembre de usar o mesmo nome de imagem (`mlalbuquerque/php:7.1`) e referenciar o arquivo dockerfile (porque não está usando o nome padrão).
+Podemos também usar o Docker Compose para tanto:
+
+```shell
+$ docker-compose build php
+```
+Neste caso, fica mais fácil, bastando apontar o nome do serviço, pois nele consta o nome da imagem e todas as diretivas relativas ao build no arquivo `docker-compose.yml`.
+
+No arquivo dockerfile `php7.1.dockerfile`, como a diretiva `CMD` é quem indica o caminho, e esta diretiva sempre pode ser sobrescrita dentro do docker-compose.yml, caso precise apontar para outra pasta, digamos `/app/public`, podemos fazer da seguinte maneira no serviço `php`:
 
 ```yaml
 # coloque esta diretiva a mais no serviço php do docker-compose.yml
