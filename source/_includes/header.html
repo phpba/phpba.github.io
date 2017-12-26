@@ -1,0 +1,38 @@
+<header class="navigation" role="banner">
+    {% include "github_ribbon" %}
+    <div class="navigation-wrapper">
+        <a href="{{ site.baseurl }}/" class="logo">
+            {% if site.logo %}
+            <img src="{{ site.baseurl }}/{{ site.logo}}" alt="{{ site.title }}"> {% else %}
+            <span>{{ site.title }}</span>
+            {% endif %}
+        </a>
+        <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+            <i class="fa fa-bars"></i>
+        </a>
+        <nav role="navigation">
+            <ul id="js-navigation-menu" class="navigation-menu">
+                <li class="nav-link">
+                    <a href="/writing/">
+                        Quer postar no Blog? Saiba como!
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="/about/">
+                        Sobre nós
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="/posts/">
+                        Posts
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="/projects/">
+                        Projetos
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

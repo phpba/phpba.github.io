@@ -1,0 +1,41 @@
+{
+ "name": "App",
+ "icons": [
+  {
+   "src": "\/android-icon-36x36.jpg",
+   "sizes": "36x36",
+   "type": "image\/jpg",
+   "density": "0.75"
+  },
+  {
+   "src": "\/android-icon-48x48.jpg",
+   "sizes": "48x48",
+   "type": "image\/jpg",
+   "density": "1.0"
+  },
+  {
+   "src": "\/android-icon-72x72.jpg",
+   "sizes": "72x72",
+   "type": "image\/jpg",
+   "density": "1.5"
+  },
+  {
+   "src": "\/android-icon-96x96.jpg",
+   "sizes": "96x96",
+   "type": "image\/jpg",
+   "density": "2.0"
+  },
+  {
+   "src": "\/android-icon-144x144.jpg",
+   "sizes": "144x144",
+   "type": "image\/jpg",
+   "density": "3.0"
+  },
+  {
+   "src": "\/android-icon-192x192.jpg",
+   "sizes": "192x192",
+   "type": "image\/jpg",
+   "density": "4.0"
+  }
+ ]
+}

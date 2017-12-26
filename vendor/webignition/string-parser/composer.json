@@ -1,0 +1,20 @@
+{
+    "name": "webignition/string-parser",
+    "description": "Abstract state-based string parser",
+    "keywords": ["string", "parser"],
+    "homepage": "https://github.com/webignition/string-parser",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jon Cram",
+            "email": "jon@webignition.net"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },    
+    "require": {
+        "php": ">=5.3.0"
+    }      
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="dflydev-util-antPathMatcher" basedir="." default="main">
+
+	<property file="build.properties" />
+
+	<property name="paths.build" value="${project.basedir}/build" />
+	<property name="paths.tests" value="${project.basedir}/tests" />
+	<property name="paths.logs" value="${paths.build}/logs" />
+	<property name="paths.reports" value="${paths.build}/reports" />
+	
+	<target name="main" />
+
+	<target name="test">
+		<mkdir dir="${paths.logs}" />
+		<mkdir dir="${paths.reports}/coverage" />
+		<property name="coverage.database" value="${paths.logs}/coverage.db" />
+		<coverage-setup database="${coverage.database}">
+			<fileset dir="src">
+				<include name="**/*.php" />
+			</fileset>
+		</coverage-setup>
+		<phpunit printsummary="true" codecoverage="true" bootstrap="tests/bootstrap.php">
+			<formatter todir="${paths.logs}" type="xml" />
+			<formatter todir="${paths.reports}/coverage" type="clover" />
+			<batchtest>
+				<fileset dir="${paths.tests}">
+					<include name="**/Test.php" />
+					<exclude name="**/Abstract*" />
+				</fileset>
+			</batchtest>
+		</phpunit>
+	</target>
+
+</project>

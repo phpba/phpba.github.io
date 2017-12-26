@@ -1,6 +1,8 @@
-/.idea
-*.swp
-_site
-.sass-cache
-Gemfile.lock
-/nbproject
+/.sculpin/
+/app/cache/*
+/app/config/sculpin_kernel_*.yml
+/app/config/sculpin_site_*.yml
+/app/logs/*
+/output_*/
+/source/components/
+s3.conf

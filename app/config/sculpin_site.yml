@@ -1,0 +1,79 @@
+# Site settings
+title: "PHPBA Blog"
+subtitle: "Esse é o blog do grupo PHPBA. Toda contribuição será bem vinda!"
+email: "phpba@googlegroups.com"
+name: "PHPBA"
+description: "Esse é o blog do grupo PHPBA. Toda contribuição será bem vinda!"
+
+# Base URL of site (i.e. /blog). It should always start with a slash,
+# and never end with a slash. Set it to a blank value if hosting at the
+# root of your server.
+baseurl: "" # the subpath of your site, e.g. /blog/
+#url: "http://phpba.github.io" # the base hostname & protocol for your site
+cover: "/assets/images/header-salvador.jpg"
+logo: "/assets/images/brand.jpg"
+
+# Disqus comments
+disqus: phpba
+
+# Google analytics
+ga_tracking_id: "UA-75997810-1"
+
+# Social icons and sharing options
+#
+# Social settings are used in two places:
+# * In the footer, as links to your personal profiles
+# * After each blog post for sharing widgets
+#
+# Example:
+#
+# social:
+#   - name: Twitter                         # Name of the service
+#     icon: twitter                         # Font Awesome icon to use (minus fa- prefix)
+#     username: "@TheBenCentra"             # (User) Name to display in the footer link
+#     url: https://twitter.com/TheBenCentra # URL of your profile (leave blank to not display in footer)
+#     desc: Follow me on Twitter            # Description to display as link title, etc
+#     share: true                           # Include in the "Share" section of posts
+social:
+  - name: Twitter
+    icon: twitter
+    username: phpba
+    url: https://twitter.com/phpba
+    desc: Follow me on Twitter
+    share: true
+
+  - name: Facebook
+    icon: facebook
+    username: phpba
+    url: https://www.facebook.com/PHP-BA-1452159261670420
+    desc: Friend me on Facebook
+    share: true
+
+  - name: GitHub
+    icon: github
+    username: phpba
+    url: https://github.com/phpba
+    desc: Fork me on GitHub
+    share: false
+
+  - name: Telegram
+    icon: paper-plane
+    username: phpba
+    url: https://telegram.me/phpba
+    desc: Grupo do PHPBA no Telegram
+    share: true
+
+# Social sharing protocols
+# These are for automatically generating sharing metadata for FB and Twitter
+# OS Protocol is for sharing the source of your site, if you're interested. For more, see osprotocol.com
+protocols:
+    fb_image: "/assets/logo.jpg"
+    fb_image_width: 612
+    fb_image_height: 605
+    fb_image_type: "image/jpg"
+
+    twitter_image: "/assets/logo.jpg"
+
+    os_repo: "https://github.com/RichardLitt/wordhoardpress.com"
+    os_rcs_type: "git"
+    os_src: "git@github.com:RichardLitt/wordhoardpress.com.git"

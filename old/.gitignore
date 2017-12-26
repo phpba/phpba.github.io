@@ -1,0 +1,6 @@
+/.idea
+*.swp
+_site
+.sass-cache
+Gemfile.lock
+/nbproject
