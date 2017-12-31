@@ -1,38 +1,58 @@
 <head>
-    <title>{% block title %}{{ page.title }}{% endblock %} &mdash; {{ site.title }} &mdash; {{ site.subtitle }}</title>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.jpg">
     <meta name="theme-color" content="#ffffff">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> {% block head_meta %}
-    <meta name="robots" content="noindex, follow"> {% endblock %}
-    <link href="{{ site.url }}/components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="{{ site.url }}/css/style.css" rel="stylesheet" type="text/css" />
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    <meta name="author" content="{% if page.author.name %}{{ page.author.name }}{% else %}{{ site.name }}{% endif %}">
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | striptags }}{% else %}{{ site.description }}{% endif %}">
+    {% if site.name %}
+    <meta name="copyright" content="&copy; {{ site.name }} {{ site.time | date('Y') }}">
+    {% endif %}
+
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
             <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 
-    <link rel="apple-touch-startup-image" href="{{ site.url }}/images/jackson/2048x2048.png">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="shortcut icon" sizes="76x76" href="{{ site.url }}/images/jackson/76x76.png">
-    <link rel="shortcut icon" sizes="120x120" href="{{ site.url }}/images/jackson/120x120.png">
-    <link rel="shortcut icon" sizes="128x128" href="{{ site.url }}/images/jackson/128x128.png">
-    <link rel="shortcut icon" sizes="152x152" href="{{ site.url }}/images/jackson/152x152.png">
-    <link rel="shortcut icon" sizes="196x196" href="{{ site.url }}/images/jackson/196x196.png">
-    <link rel="shortcut icon" sizes="512x512" href="{{ site.url }}/images/jackson/512x512.png">
-    <link rel="shortcut icon" sizes="1024x1024" href="{{ site.url }}/images/jackson/1024x1024.png">
-    <link rel="shortcut icon" sizes="2048x2048" href="{{ site.url }}/images/jackson/2048x2048.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ site.url }}/images/jackson/76x76.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ site.url }}/images/jackson/120x120.png">
-    <link rel="apple-touch-icon" sizes="128x128" href="{{ site.url }}/images/jackson/128x128.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ site.url }}/images/jackson/152x152.png">
-    <link rel="apple-touch-icon" sizes="196x196" href="{{ site.url }}/images/jackson/196x196.png">
-    <link rel="apple-touch-icon" sizes="512x512" href="{{ site.url }}/images/jackson/512x512.png">
-    <link rel="apple-touch-icon" sizes="1024x1024" href="{{ site.url }}/images/jackson/1024x1024.png">
-    <link rel="apple-touch-icon" sizes="2048x2048" href="{{ site.url }}/images/jackson/2048x2048.png">
+    <!-- Favicon and other icons (made with http://www.favicon-generator.org/) -->
+    <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.jpg">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.jpg">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.jpg">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.jpg">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.jpg">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.jpg">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.jpg">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.jpg">
+    <link rel="icon" type="image/jpg" sizes="192x192" href="/assets/icons/android-icon-192x192.jpg">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/assets/icons/favicon-32x32.jpg">
+    <link rel="icon" type="image/jpg" sizes="96x96" href="/assets/icons/favicon-96x96.jpg">
+    <link rel="icon" type="image/jpg" sizes="16x16" href="/assets/icons/favicon-16x16.jpg">
+    <link rel="manifest" href="/assets/icons/manifest.json">
+
+    <!-- External libraries -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/monokai_sublime.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+
+    <!-- Site styles -->
+    <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+    <!-- TODO inserir link rel canonical -->
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml" />
+
+
+    <link href="{{ site.url }}/components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="{{ site.url }}/css/style.css" rel="stylesheet" type="text/css" />
 
     <link rel="stylesheet" href="{{ site.url }}/components/highlightjs/styles/github.css" />
-    <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/atom.xml" title="{{ site.title }} activity feed" />
+    <!-- <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/atom.xml" title="{{ site.title }} activity feed" /> -->
     <style>
         /** quick fix because bootstrap <pre> has a background-color. */
 
@@ -40,5 +60,6 @@
             background-color: inherit;
         }
     </style>
+
     {% block head_styles %} {% endblock %} {% block head_scripts %} {% endblock %}
 </head>
