@@ -44,15 +44,12 @@
 
     <!-- Site styles -->
     <link rel="stylesheet" href="{{ site.url }}/css/main.css">
-    <!-- TODO inserir link rel canonical -->
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml" />
-
-
-    <link href="{{ site.url }}/components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="{{ site.url }}/css/style.css" rel="stylesheet" type="text/css" />
+    <!-- TODO inserir link rel canonical -->
 
     <link rel="stylesheet" href="{{ site.url }}/components/highlightjs/styles/github.css" />
     <!-- <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/atom.xml" title="{{ site.title }} activity feed" /> -->
+    
     <style>
         /** quick fix because bootstrap <pre> has a background-color. */
 
@@ -60,6 +57,11 @@
             background-color: inherit;
         }
     </style>
+
+    <!-- TODO inserir configurações de redes sociais -->
+    <!-- Facebook OGP cards -->
+    <!-- Twitter: card tags -->
+    <!-- Open Source Protocol -->
 
     {% block head_styles %} {% endblock %} {% block head_scripts %} {% endblock %}
 </head>

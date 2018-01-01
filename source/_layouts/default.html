@@ -7,28 +7,14 @@
 
         {% include "header" %}
 
-        <div class="mainContent container">
-            <div class="row-fluid">
-                <div class="span8">
-                    {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
-                </div>
-                <!-- <div class="span4 sidebar">
-                        <div class="well">
-                            <h4>{{ site.title }}{% if site.subtitle %} <small>{{ site.subtitle }}</small>{% endif %}</h4>
-                        </div>
-                        <div class="well sidebar-nav">
-                            <h4>Links</h4>
-                            <ul class="nav">
-                                <li><a href="http://sculpin.io">sculpin.io</a></li>
-                                <li><a href="http://twitter.com/getsculpin">@getsculpin</a></li>
-                            </ul>
-                        </div>
-                    </div> -->
-            </div>
+        <div class="page-content">
+            {% block content_wrapper %}
+                {% block content %}
+                {% endblock %}
+            {% endblock %}
         </div>
 
         {% include "footer" %}
         
     </body>
-
 </html>
