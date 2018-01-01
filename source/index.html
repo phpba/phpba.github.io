@@ -7,27 +7,45 @@ pagination:
 use:
     - posts
 ---
-{% for post in page.pagination.items %}
-    <article>
-        <header>
-            <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
-        </header>
-        <div>
-            {{ post.blocks.content|raw }}
+<div class="home">
+
+    <div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url({{ site.baseurl }}{{ site.cover }});"
+        {% endif %}>
+        <div class="scrim {% if site.cover %}has-cover{% endif %}">
+            <header class="site-header">
+                <h1 class="title">{{ site.title }}</h1>
+                {% if site.subtitle %}
+                <p class="subtitle">{{ site.subtitle }}</p>{% endif %}
+            </header>
         </div>
-        {% if post.meta.tags %}
+    </div>
+
+    <div class="wrapper">
+        {% for post in page.pagination.items %}
+        <article>
+            <header>
+                <h2>
+                    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                </h2>
+            </header>
+            <div>
+                {{ post.blocks.content|raw|striptags|slice(0, 300) ~ '...' }}
+            </div>
+            {% if post.meta.tags %}
             <p class="tags">
-            Tags:
-            {% for tag in post.meta.tags %}
-            <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
-            {% endfor %}
+                Tags: {% for tag in post.meta.tags %}
+                <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %} {% endfor %}
             </p>
+            {% endif %}
+        </article>
+        {% endfor %} {% if page.pagination.previous_page or page.pagination.next_page %}
+        <nav>
+            {% if page.pagination.previous_page %}
+            <a href="{{ site.url }}{{ page.pagination.previous_page.url }}">Newer Posts</a>{% endif %}
+            <br /> {% if page.pagination.next_page %}
+            <a href="{{ site.url }}{{ page.pagination.next_page.url }}">Older Posts</a>{% endif %}
+            <br />
+        </nav>
         {% endif %}
-    </article>
-{% endfor %}
-{% if page.pagination.previous_page or page.pagination.next_page %}
-    <nav>
-        {% if page.pagination.previous_page %}<a href="{{ site.url }}{{ page.pagination.previous_page.url }}">Newer Posts</a>{% endif %}<br />
-        {% if page.pagination.next_page %}<a href="{{ site.url }}{{ page.pagination.next_page.url }}">Older Posts</a>{% endif %}<br />
-    </nav>
-{% endif %}
+    </div>
+</div>
