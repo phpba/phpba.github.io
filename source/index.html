@@ -21,24 +21,37 @@ use:
     </div>
 
     <div class="wrapper">
-        {% for post in page.pagination.items %}
-        <article>
-            <header>
+        <ul class="post-list">
+            {% for post in page.pagination.items %}
+            <li>
                 <h2>
                     <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
                 </h2>
-            </header>
-            <div>
-                {{ post.blocks.content|raw|striptags|slice(0, 300) ~ '...' }}
-            </div>
-            {% if post.meta.tags %}
-            <p class="tags">
-                Tags: {% for tag in post.meta.tags %}
-                <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %} {% endfor %}
-            </p>
+                <section class="post-excerpt" itemprop="description">
+                    {{ post.blocks.content|raw|striptags|slice(0, 300) ~ '...' }}
+                </section>
+                <section class="post-meta">
+                    <div class="post-date">
+                        {% include "date" %}
+                    </div>
+                    <div class="post-author">
+                        {{ post.author.name }}
+                    </div>
+                    <div class="post-categories">
+                        em {% if post.categories %} 
+                            {% for category in post.categories %}
+                            <a href="{{ site.url }}/blog/categories/{{ category|url_encode(true) }}">{{ category| capitalize }}</a>{% if not loop.last %}, {% endif %} 
+                            {% endfor %} 
+                        {% endif %}
+                    </div>
+                </section>
+            </li>
+            {% if forloop.last == false %}
+            <hr>
             {% endif %}
-        </article>
-        {% endfor %} {% if page.pagination.previous_page or page.pagination.next_page %}
+            {% endfor %}
+        </ul>
+        {% if page.pagination.previous_page or page.pagination.next_page %}
         <nav>
             {% if page.pagination.previous_page %}
             <a href="{{ site.url }}{{ page.pagination.previous_page.url }}">Newer Posts</a>{% endif %}
