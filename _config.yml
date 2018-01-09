@@ -175,9 +175,9 @@ social:
 # These are for automatically generating sharing metadata for FB and Twitter
 # OS Protocol is for sharing the source of your site, if you're interested. For more, see osprotocol.com
 protocols:
-    fb_image: "/assets/logo.jpg"
-    fb_image_width: 612
-    fb_image_height: 605
+    fb_image: "/assets/images/elephpant.jpg"
+    fb_image_width: 595
+    fb_image_height: 899
     fb_image_type: "image/jpg"
 
     twitter_image: "/assets/logo.jpg"
