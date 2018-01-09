@@ -14,7 +14,7 @@ categories:
 tags: ["certificações PHP", "certificações", "PHP"]
 cover:  "/assets/posts/2018/01/certificacoes/certidied.png"
 ---
-A grande maioria dos desenvolvedores vem o PHP como uma porta de entrada para o mundo da programação, pois sua curva de
+A grande maioria dos desenvolvedores veem o PHP como uma porta de entrada para o mundo da programação, pois sua curva de
 aprendizado é baixa. Também não é muita surpresa que o mercado esteja saturado por profissionais desqualificados e que
 desenvolvem projetos sem o mínimo de arquitetura e boas práticas. Mas o que fazer para melhorar o mercado? Segundo o
 [Jefersson Nathan](https://twitter.com/malukenho) me disse uma vez: *“O segredo é levar uma vida de estudos.”*, fiquei com isso na cabeça pois como diz o
