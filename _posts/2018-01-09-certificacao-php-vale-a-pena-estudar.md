@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Certificação PHP: vale a pena estudar?"
-date:   2018-01-02 12:00:00
+date:   2018-01-09 12:00:00
 original: https://medium.com/@reenesoares/certifica%C3%A7%C3%A3o-php-vale-a-pena-estudar-5eb46865610b
 author: 
     name: "Renê Soares"
