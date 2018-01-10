@@ -2,7 +2,6 @@
 layout: post
 title:  "Certificação PHP: vale a pena estudar?"
 date:   2018-01-09 12:00:00
-original: https://medium.com/@reenesoares/certifica%C3%A7%C3%A3o-php-vale-a-pena-estudar-5eb46865610b
 author: 
     name: "Renê Soares"
     mail: "reenerochase@gmail.com"
@@ -40,7 +39,7 @@ inglês, então é bom estar com a língua inglesa em dia.
 
 # Zend PHP Certification
 Essa certificação oficial da linguagem é promovida pela empresa [Zend](http://www.zend.com/en) e atualmente custa
-US$ 195.00 (R$ 627,90, cotação do dólar na data do dia 27 de Janeiro de 2018). Nesta 
+US$ 195.00 (R$ 627,90, cotação do dólar na data do dia 07 de Janeiro de 2018). Nesta 
 [página](http://www.zend.com/en/services/certification/php-certification) tem a sessão “List of Exam Topics” onde tem a 
 lista dos assuntos cobrados.
 
