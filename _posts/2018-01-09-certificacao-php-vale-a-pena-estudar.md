@@ -11,7 +11,7 @@ categories:
     - Certificações
     - Estudos
 tags: ["certificações PHP", "certificações", "PHP"]
-cover:  "/assets/posts/2018/01/certificacoes/certidied.png"
+cover:  "/assets/posts/2018/01/certificacoes/certified.png"
 ---
 A grande maioria dos desenvolvedores veem o PHP como uma porta de entrada para o mundo da programação, pois sua curva de
 aprendizado é baixa. Também não é muita surpresa que o mercado esteja saturado por profissionais desqualificados e que
